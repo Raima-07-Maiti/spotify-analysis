@@ -5,7 +5,7 @@ st.set_page_config(page_title="Spotify Analysis", layout="wide")
 st.subheader("Last 90-days Spotify Consumption.")
 st.write("I'm impatient, lets see how I consumed Spotify in the last 90 days!")
 
-#Spotify forwarded 2 Streaming history file. 
+#Spotify forwarded 2 Streaming history files. 
 table_1= pd.read_json("StreamingHistory_music_0.json")
 table_2=pd.read_json("StreamingHistory_music_1.json")
 data_frame=pd.concat([table_1,table_2], ignore_index=True)
